@@ -1,0 +1,13 @@
+https://github.com/LautaroLambrecht/trabajoConSed.git
+
+grep -oi 'quijote' el_quijote.txt | wc -l
+grep -vc 'quijote' el_quijote.txt
+grep -rl 'quijote'  | wc -l
+grep -r -o -i 'quijote' trabajoConSed | wc -l
+grep -i -L 'quijote' *
+sed -i 's/panza/barriga/g' el_quijote.txt
+sed -i 's/[Pp]anza/barriga/g' el_quijote.txt
+head -c 4 el_quijote.txt
+head -c 4000 el_quijote.txt
+sed -n '14,25p' el_quijote.txt
+sort -f el_quijote.txt | sort -r
